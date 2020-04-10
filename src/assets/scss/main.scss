@@ -1,10 +1,13 @@
 @import './bgcolor/color';
-.wrapper {
-    width: 100%;
-    height: auto;
+body {
     background: $bg-color;
     background: $bg-gradient;
     filter: $bg-filter;
+}
+
+.wrapper {
+    width: 100%;
+    height: calc(100% + 100vh);
 }
 
 .main_wrapper {
@@ -14,24 +17,27 @@
 }
 
 .navbar {
-    background-color: #00f;
+    background: linear-gradient(45deg, rgba(232, 255, 161, 1) 0%, rgba(135, 0, 52, 0.57) 66%, rgba(135, 0, 52, 0.35) 100%);
     width: 100%;
     height: 180px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-radius: 10px 10px 10px 10px;
+    border: 2px solid #000000;
+    box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.75);
 }
 
 .burger_menu {
-    margin-top: 5%;
+    margin-top: 3%;
     width: 40px;
+    height: 36px;
+    margin-left: 2%;
     flex-direction: row;
     display: flex;
-    height: 36px;
     justify-content: space-between;
-    margin-left: 2%;
-    background-color: brown;
+    cursor: pointer;
+    z-index: 2;
     span {
         font-size: 2em;
     }
@@ -90,38 +96,84 @@ span {
     margin-left: 17%;
     margin-top: -4%;
     font-size: 3em;
+    transition: transform 0.3s;
     @media (max-width: 1160px) {
         font-size: 2em;
         margin-left: 25%;
         margin-top: 0%;
+        transition: transform 0.3s;
     }
     @media (max-width: 862px) {
         font-size: 1.5em;
         margin-left: 17%;
+        transition: transform 0.3s;
     }
     @media (max-width: 566px) {
         font-size: 1em;
         margin-left: 21%;
         margin-top: 10%;
+        transition: transform 0.3s;
     }
     @media (max-width: 400px) {
         font-size: 0.8em;
         margin-left: 17%;
+        transition: transform 0.3s;
     }
 }
 
 .cart_container {
     .card {
-        width: 239px;
+        width: 229px;
         height: 102%;
         background: linear-gradient(to right, rgba(255, 94, 94, 0.7) 0%, rgba(239, 1, 124, 0.99) 54%, rgba(239, 1, 124, 1) 54%);
         opacity: 0.9;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+        cursor: pointer;
         .card-img-top {
             border-radius: 200px 200px 200px 200px;
         }
         .card-text {
             text-align: center;
-            font-size: 2em;
+            font-size: 1.5em;
         }
+    }
+}
+
+.card:hover {
+    box-shadow: 0 8px 13px 0px rgba(0, 0, 0, .75);
+    transition: box-shadow 0.3s;
+}
+
+.navMenu {
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    background: $bg-color_burger_menu;
+    width: 49%;
+    height: 106vh;
+    transform: translate(-143%, 36vh);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    border: 1px solid #000000;
+    transition: transform .5s, -webkit-transform .5s;
+}
+
+.list_menu {
+    margin: 44% auto auto auto;
+    list-style-type: none;
+    text-transform: uppercase;
+    width: 24%;
+    height: 393px;
+    display: flex;
+    flex-direction: column;
+    li {
+        margin: auto auto auto 44%;
+        cursor: pointer;
+        font-size: 2em;
+    }
+    li:hover {
+        margin: auto auto auto 44%;
+        cursor: pointer;
+        font-size: 2em;
+        color: red;
     }
 }

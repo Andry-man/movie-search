@@ -1,0 +1,15 @@
+export const cart_container = document.getElementById('cart_container');
+export const burger_menu = document.getElementById('burger_menu');
+export const swich_block = document.getElementById('swich_block');
+export const cart_1 = document.getElementById('cart_1');
+export const cart_2 = document.getElementById('cart_2');
+export const cart_3 = document.getElementById('cart_3');
+export const cart_4 = document.getElementById('cart_4');
+export const cart_5 = document.getElementById('cart_5');
+export const cart_6 = document.getElementById('cart_6');
+export const cart_7 = document.getElementById('cart_7');
+export const cart_8 = document.getElementById('cart_8');
+export const burger_el_1 = document.getElementById('burger_el_1');
+export const burger_el_2 = document.getElementById('burger_el_2');
+export const burger_el_3 = document.getElementById('burger_el_3');
+export const navMenu = document.getElementById('navMenu');
