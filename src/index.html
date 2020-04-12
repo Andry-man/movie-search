@@ -9,18 +9,21 @@
 
 <body>
     <div class="wrapper">
+        <div class="blackout" id="blackout"></div>
         <div class="main_wrapper">
-            <nav class="navbar">
+            <nav class="navbar" id="navbar">
+                <p class="title">English for kids<br>RSSchool2020Q1</p>
                 <div class="navMenu" id="navMenu">
-                    <ul class="list_menu">
-                        <li class="menu_action_1">Action(A)</li>
-                        <li class="menu_action_2">Action(B)</li>
-                        <li class="menu_action_3">Action(C)</li>
-                        <li class="menu_adjective">Adjective</li>
-                        <li class="menu_animal_1">Animal(A)</li>
-                        <li class="menu_animal_2">Animal(B)</li>
-                        <li class="menu_clothes">Clothes</li>
-                        <li class="menu_emotion">Emotion</li>
+                    <ul class="list_menu" id="list_menu">
+                        <li class="main_page" id="main_page">Main page</li>
+                        <li class="menu_action_1" id="menu_action_1">Action(A)</li>
+                        <li class="menu_action_2" id="menu_action_2">Action(B)</li>
+                        <li class="menu_action_3" id="menu_action_3">Action(C)</li>
+                        <li class="menu_adjective" id="menu_adjective">Adjective</li>
+                        <li class="menu_animal_1" id="menu_animal_1">Animal(A)</li>
+                        <li class="menu_animal_2" id="menu_animal_2">Animal(B)</li>
+                        <li class="menu_clothes" id="menu_clothes">Clothes</li>
+                        <li class="menu_emotion" id="menu_emotion">Emotion</li>
                     </ul>
                 </div>
                 <div class="burger_menu" id="burger_menu">
@@ -28,13 +31,17 @@
                     <span id="burger_el_2">|</span>
                     <span id="burger_el_3">|</span>
                 </div>
-                <div class="swich_block" id="swich_block"></div>
+                <div class="swich_block" id="swich_block">
+                    <div class="wrapper_checkbox">
+                        <input type="checkbox" id="checkbox">
+                    </div>
+                </div>
             </nav>
             <ul class="cart_container" id="cart_container">
                 <li>
                     <section class="card" id="cart_1">
                         <img class="card-img-top" src="./assets/img/action1.jpg" alt="img action1">
-                        <div class="card-body">
+                        <div class="card-body" id="action_1">
                             <p class="card-text">Action (set A)</p>
                         </div>
                     </section>
@@ -42,7 +49,7 @@
                 <li>
                     <section class="card" id="cart_2">
                         <img class="card-img-top" src="./assets/img/acton2.jpg" alt="img action2">
-                        <div class="card-body">
+                        <div class="card-body" id="action_2">
                             <p class="card-text">Action (set B)</p>
                         </div>
                     </section>
@@ -50,7 +57,7 @@
                 <li>
                     <section class="card" id="cart_3">
                         <img class="card-img-top" src="./assets/img/action3.JPG" alt="img action3">
-                        <div class="card-body">
+                        <div class="card-body" id="action_3">
                             <p class="card-text">Action (set C)</p>
                         </div>
                     </section>
@@ -58,7 +65,7 @@
                 <li>
                     <section class="card" id="cart_4">
                         <img class="card-img-top" src="./assets/img/ajective.jpg" alt="Adjective">
-                        <div class="card-body">
+                        <div class="card-body" id="adjective">
                             <p class="card-text">Adjective</p>
                         </div>
                     </section>
@@ -66,7 +73,7 @@
                 <li>
                     <section class="card" id="cart_5">
                         <img class="card-img-top" src="./assets/img/animal.jpg" alt="animal (set A)">
-                        <div class="card-body">
+                        <div class="card-body" id="animal_1">
                             <p class="card-text">Animal (set A)</p>
                         </div>
                     </section>
@@ -74,7 +81,7 @@
                 <li>
                     <section class="card" id="cart_6">
                         <img class="card-img-top" src="./assets/img/animal(2).jpg" alt="animal (set B)">
-                        <div class="card-body">
+                        <div class="card-body" id="animal_2">
                             <p class="card-text">Animal (set B)</p>
                         </div>
                     </section>
@@ -82,7 +89,7 @@
                 <li>
                     <section class="card" id="cart_7">
                         <img class="card-img-top" src="./assets/img/chlothers.jpg" alt="Clothes">
-                        <div class="card-body">
+                        <div class="card-body" id="clothes">
                             <p class="card-text">Clothes</p>
                         </div>
                     </section>
@@ -90,8 +97,75 @@
                 <li>
                     <section class="card" id="cart_8">
                         <img class="card-img-top" src="./assets/img/emotion.jpg" alt="emotion">
-                        <div class="card-body">
+                        <div class="card-body" id="emotion">
                             <p class="card-text">Emotion</p>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+
+            <ul class="cart_container_cards" id="cart_container_cards">
+                <li>
+                    <section class="card" id="cart_1">
+                        <img class="card-img-top" src="./assets/img/action1.jpg" id="img_action_1" alt="img action1">
+                        <div class="card-body">
+                            <p class="card-text" id="card_text_1">Action (set A)</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_2">
+                        <img class="card-img-top" id="img_action_2" src="./assets/img/acton2.jpg" alt="img action2">
+                        <div class="card-body">
+                            <p class="card-text" id="card_text_2">Action (set B)</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_3">
+                        <img class="card-img-top" id="img_action_3" src="./assets/img/action3.JPG" alt="img action3">
+                        <div class="card-body">
+                            <p class="card-text" id="card_text_3">Action (set C)</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_4">
+                        <img class="card-img-top" id="img_Adjective" src="./assets/img/ajective.jpg" alt="Adjective">
+                        <div class="card-body">
+                            <p class="card-text" id="card_text_4">Adjective</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_5">
+                        <img class="card-img-top" id="img_animal_1" src="./assets/img/animal.jpg" alt="animal (set A)">
+                        <div class="card-body">
+                            <p class="card-text" id="card_text_5">Animal (set A)</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_6">
+                        <img class="card-img-top" id="img_animal_2" src="./assets/img/animal(2).jpg" alt="animal (set B)">
+                        <div class="card-body">
+                            <p class="card-text" id="card_text_6">Animal (set B)</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_7">
+                        <img class="card-img-top" id="img_Clothes" src="./assets/img/chlothers.jpg" alt="Clothes">
+                        <div class="card-body">
+                            <p class="card-text" id="card_text_7">Clothes</p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_8">
+                        <img class="card-img-top" id="img_emotion" src="./assets/img/emotion.jpg" alt="emotion">
+                        <div class="card-body">
+                            <p class="card-text" id="card_text_8">Emotion</p>
                         </div>
                     </section>
                 </li>
