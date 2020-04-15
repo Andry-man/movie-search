@@ -35,3 +35,5 @@ export const img_action_1 = document.getElementById('img_action_1');
 export const navbar = document.getElementById('navbar');
 export const list_menu = document.getElementById('list_menu');
 export const card_text_1 = document.getElementById('card_text_1');
+export const card_button_switch = document.getElementsByClassName('card_button_switch');
+export const card = document.getElementsByClassName('card');

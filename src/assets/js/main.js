@@ -1,5 +1,5 @@
-import { cart_1, cart_2, cart_3, cart_4, cart_5, cart_6, cart_7, cart_8 } from "./name_constants"
-
+import { cart_1, cart_2, cart_3, cart_4, cart_5, cart_6, cart_7, cart_8, card_button_switch, card } from "./name_constants"
+import { translations, translationsRevers } from "./translations"
 let arrCard = [cart_1, cart_2, cart_3, cart_4, cart_5, cart_6, cart_7, cart_8];
 
 class Cards {
@@ -82,7 +82,7 @@ main_page.addEventListener('click', (event) => { //Кнопка главное �
 
 
 let tes = cart_container.querySelectorAll('li');
-tes.forEach(function(elem) {
+tes.forEach(function(elem) { //менят инфу на карточке
     elem.addEventListener("click", function() {
         if (event.target.className == 'card-img-top' || event.target.className == 'card-text' || event.target.className == 'card-body') {
             cart_container.style.display = 'none'
@@ -91,34 +91,152 @@ tes.forEach(function(elem) {
         if (elem.childNodes[1].id == 'cart_1') {
             card_Action_1.text_change(card_text_1.innerText = 'cry')
             card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/cry.jpg')
-        }
-        if (elem.childNodes[1].id == 'cart_1') {
             card_Action_2.text_change(card_text_2.innerText = 'dance')
             card_Action_2.img_change(img_action_2.src = './assets/img/img_action_1/dance.jpg')
-        }
-        if (elem.childNodes[1].id == 'cart_1') {
             card_Action_3.text_change(card_text_3.innerText = 'dive')
             card_Action_3.img_change(img_action_3.src = './assets/img/img_action_1/dive.jpg')
-        }
-        if (elem.childNodes[1].id == 'cart_1') {
             card_Adjective.text_change(card_text_4.innerText = 'draw')
             card_Adjective.img_change(img_Adjective.src = './assets/img/img_action_1/draw.jpg')
-        }
-        if (elem.childNodes[1].id == 'cart_1') {
             card_Animal_1.text_change(card_text_5.innerText = 'fish')
             card_Animal_1.img_change(img_animal_1.src = './assets/img/img_action_1/fish.jpg')
-        }
-        if (elem.childNodes[1].id == 'cart_1') {
             card_Animal_2.text_change(card_text_6.innerText = 'fly')
             card_Animal_2.img_change(img_animal_2.src = './assets/img/img_action_1/fly.jpg')
-        }
-        if (elem.childNodes[1].id == 'cart_1') {
             cart_Clothes.text_change(card_text_7.innerText = 'hug')
             cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/Clothes.jpg')
-        }
-        if (elem.childNodes[1].id == 'cart_1') {
+            cart_Clothes.text_change(card_text_7.innerText = 'hug')
+            cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/Clothes.jpg')
             cart_emotion.text_change(card_text_8.innerText = 'jump')
             cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/jump.jpg')
+        }
+
+        if (elem.childNodes[1].id == 'cart_2') {
+            card_Action_1.text_change(card_text_1.innerText = 'open')
+            card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/open.jpg')
+            cart_emotion.text_change(card_text_8.innerText = 'skip')
+            cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/skip.jpg')
+            card_Action_2.text_change(card_text_2.innerText = 'play')
+            card_Action_2.img_change(img_action_2.src = './assets/img/img_action_1/play.jpg')
+            card_Action_3.text_change(card_text_3.innerText = 'point')
+            card_Action_3.img_change(img_action_3.src = './assets/img/img_action_1/point.jpg')
+            card_Adjective.text_change(card_text_4.innerText = 'ride')
+            card_Adjective.img_change(img_Adjective.src = './assets/img/img_action_1/ride.jpg')
+            card_Animal_1.text_change(card_text_5.innerText = 'run')
+            card_Animal_1.img_change(img_animal_1.src = './assets/img/img_action_1/run.jpg')
+            card_Animal_2.text_change(card_text_6.innerText = 'swim')
+            card_Animal_2.img_change(img_animal_2.src = './assets/img/img_action_1/swim.jpg')
+            cart_Clothes.text_change(card_text_7.innerText = 'sing')
+            cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/sing.jpg')
+        }
+
+        if (elem.childNodes[1].id == 'cart_3') {
+            card_Action_1.text_change(card_text_1.innerText = 'argue')
+            card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/argue.jpg')
+            card_Action_2.text_change(card_text_2.innerText = 'build')
+            card_Action_2.img_change(img_action_2.src = './assets/img/img_action_1/build.jpg')
+            card_Action_3.text_change(card_text_3.innerText = 'carry')
+            card_Action_3.img_change(img_action_3.src = './assets/img/img_action_1/carry.jpg')
+            card_Adjective.text_change(card_text_4.innerText = 'catch')
+            card_Adjective.img_change(img_Adjective.src = './assets/img/img_action_1/catch.jpg')
+            card_Animal_1.text_change(card_text_5.innerText = 'drive')
+            card_Animal_1.img_change(img_animal_1.src = './assets/img/img_action_1/drive.jpg')
+            card_Animal_2.text_change(card_text_6.innerText = 'drop')
+            card_Animal_2.img_change(img_animal_2.src = './assets/img/img_action_1/drop.jpg')
+            cart_Clothes.text_change(card_text_7.innerText = 'pull')
+            cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/pull.jpg')
+            cart_emotion.text_change(card_text_8.innerText = 'push')
+            cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/push.jpg')
+        }
+        if (elem.childNodes[1].id == 'cart_4') {
+            card_Action_1.text_change(card_text_1.innerText = 'big')
+            card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/big.jpg')
+            card_Action_2.text_change(card_text_2.innerText = 'small')
+            card_Action_2.img_change(img_action_2.src = './assets/img/img_action_1/small.jpg')
+            card_Action_3.text_change(card_text_3.innerText = 'fast')
+            card_Action_3.img_change(img_action_3.src = './assets/img/img_action_1/fast.jpg')
+            card_Adjective.text_change(card_text_4.innerText = 'slow')
+            card_Adjective.img_change(img_Adjective.src = './assets/img/img_action_1/slow.jpg')
+            card_Animal_1.text_change(card_text_5.innerText = 'friendly')
+            card_Animal_1.img_change(img_animal_1.src = './assets/img/img_action_1/friendly.jpg')
+            card_Animal_2.text_change(card_text_6.innerText = 'unfriendly')
+            card_Animal_2.img_change(img_animal_2.src = './assets/img/img_action_1/unfriendly.jpg')
+            cart_Clothes.text_change(card_text_7.innerText = 'young')
+            cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/young.jpg')
+            cart_emotion.text_change(card_text_8.innerText = 'old')
+            cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/old.jpg')
+        }
+        if (elem.childNodes[1].id == 'cart_5') {
+            card_Action_1.text_change(card_text_1.innerText = 'cat')
+            card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/cat.jpg')
+            card_Action_2.text_change(card_text_2.innerText = 'chick')
+            card_Action_2.img_change(img_action_2.src = './assets/img/img_action_1/chick.jpg')
+            card_Action_3.text_change(card_text_3.innerText = 'chicken')
+            card_Action_3.img_change(img_action_3.src = './assets/img/img_action_1/chicken.jpg')
+            card_Adjective.text_change(card_text_4.innerText = 'dog')
+            card_Adjective.img_change(img_Adjective.src = './assets/img/img_action_1/dog.jpg')
+            card_Animal_1.text_change(card_text_5.innerText = 'horse')
+            card_Animal_1.img_change(img_animal_1.src = './assets/img/img_action_1/horse.jpg')
+            card_Animal_2.text_change(card_text_6.innerText = 'pig')
+            card_Animal_2.img_change(img_animal_2.src = './assets/img/img_action_1/pig.png')
+            cart_Clothes.text_change(card_text_7.innerText = 'rabbit')
+            cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/rabbit.jpg')
+            cart_emotion.text_change(card_text_8.innerText = 'sheep')
+            cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/sheep.jpg')
+        }
+        if (elem.childNodes[1].id == 'cart_6') {
+            card_Action_1.text_change(card_text_1.innerText = 'bird')
+            card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/bird.jpg')
+            card_Action_2.text_change(card_text_2.innerText = 'fish')
+            card_Action_2.img_change(img_action_2.src = './assets/img/img_action_1/fish1.jpg')
+            card_Action_3.text_change(card_text_3.innerText = 'frog')
+            card_Action_3.img_change(img_action_3.src = './assets/img/img_action_1/frog.jpg')
+            card_Adjective.text_change(card_text_4.innerText = 'giraffe')
+            card_Adjective.img_change(img_Adjective.src = './assets/img/img_action_1/giraffe.jpg')
+            card_Animal_1.text_change(card_text_5.innerText = 'lion')
+            card_Animal_1.img_change(img_animal_1.src = './assets/img/img_action_1/lion.jpg')
+            card_Animal_2.text_change(card_text_6.innerText = 'mouse')
+            card_Animal_2.img_change(img_animal_2.src = './assets/img/img_action_1/mouse.jpg')
+            cart_Clothes.text_change(card_text_7.innerText = 'turtle')
+            cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/turtle.jpg')
+            cart_emotion.text_change(card_text_8.innerText = 'dolphin')
+            cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/dolphin.jpg')
+        }
+
+        if (elem.childNodes[1].id == 'cart_7') {
+            card_Action_1.text_change(card_text_1.innerText = 'skirt')
+            card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/skirt.jpg')
+            card_Action_2.text_change(card_text_2.innerText = 'pants')
+            card_Action_2.img_change(img_action_2.src = './assets/img/img_action_1/pants.jpg')
+            card_Action_3.text_change(card_text_3.innerText = 'blouse')
+            card_Action_3.img_change(img_action_3.src = './assets/img/img_action_1/blouse.jpg')
+            card_Adjective.text_change(card_text_4.innerText = 'dress')
+            card_Adjective.img_change(img_Adjective.src = './assets/img/img_action_1/dress.jpg')
+            card_Animal_1.text_change(card_text_5.innerText = 'boot')
+            card_Animal_1.img_change(img_animal_1.src = './assets/img/img_action_1/boot.jpg')
+            card_Animal_2.text_change(card_text_6.innerText = 'shirt')
+            card_Animal_2.img_change(img_animal_2.src = './assets/img/img_action_1/shirt.jpg')
+            cart_Clothes.text_change(card_text_7.innerText = 'coat')
+            cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/coat.jpg')
+            cart_emotion.text_change(card_text_8.innerText = 'shoe')
+            cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/shoe.jpg')
+        }
+
+        if (elem.childNodes[1].id == 'cart_8') {
+            card_Action_1.text_change(card_text_1.innerText = 'sad')
+            card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/sad.png')
+            card_Action_2.text_change(card_text_2.innerText = 'angry')
+            card_Action_2.img_change(img_action_2.src = './assets/img/img_action_1/angry.jpg')
+            card_Action_3.text_change(card_text_3.innerText = 'happy')
+            card_Action_3.img_change(img_action_3.src = './assets/img/img_action_1/happy.jpg')
+            card_Adjective.text_change(card_text_4.innerText = 'tired')
+            card_Adjective.img_change(img_Adjective.src = './assets/img/img_action_1/tired.jpg')
+            card_Animal_1.text_change(card_text_5.innerText = 'surprised')
+            card_Animal_1.img_change(img_animal_1.src = './assets/img/img_action_1/surprised.jpg')
+            card_Animal_2.text_change(card_text_6.innerText = 'scared')
+            card_Animal_2.img_change(img_animal_2.src = './assets/img/img_action_1/scared.jpg')
+            cart_Clothes.text_change(card_text_7.innerText = 'smile')
+            cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/smile.jpg')
+            cart_emotion.text_change(card_text_8.innerText = 'laugh')
+            cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/laugh.jpg')
         }
     });
 });
@@ -178,11 +296,90 @@ checkbox.addEventListener('click', (event) => { //Функц.Чекбокс
         arrCard.forEach(el => el.style.background = 'linear-gradient(90deg,rgba(255,94,94,.7) 0,rgba(239,1,124,.99) 54%,#ef017c 0)');
     }
 })
+let arrText = '';
+let testDivs = Array.prototype.filter.call(card_button_switch, function(card_button_switch) {
+    card_button_switch.addEventListener('mouseover', (event) => { //Функц.Чекбокс
+        event.target.parentElement.parentNode.style.transition = 'transform 0.5s';
+        event.target.parentElement.parentNode.style.transform = 'rotateY(180deg)';
+        arrText += event.target.previousElementSibling.innerText;
+        event.target.previousElementSibling.innerText = translations[arrText];
+        event.target.previousElementSibling.style.transformStyle = "preserve-3d";
+        event.target.previousElementSibling.style.transform = 'rotateY(-180deg)';
+        arrText = '';
 
 
-// navbar.addEventListener('click', (event) => { //Кнопка главное меню
-//     location.href = 'index.html';
-// });
+    })
+    card_button_switch.addEventListener('mouseout', (event) => { //Функц.Чекбокс
+        event.target.parentElement.parentNode.style.transition = 'transform 0.5s';
+        event.target.parentElement.parentNode.style.transform = 'rotateY(0deg)';
+        event.target.previousElementSibling.style.transformStyle = "preserve-3d";
+        event.target.previousElementSibling.style.transform = 'rotateY(0deg)';
+        arrText += event.target.previousElementSibling.innerText;
+        event.target.previousElementSibling.innerText = translationsRevers[arrText];
+        arrText = '';
+    })
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+// event.target.parentElement.parentNode.style.transition = 'transform 0.5s';
+// event.target.parentElement.parentNode.style.transform = 'rotateY(0deg)';
+// event.target.previousElementSibling.style.transformStyle = "preserve-3d";
+// event.target.previousElementSibling.style.transform = 'rotateY(0deg)';
+// arrText += event.target.previousElementSibling.innerText;
+// event.target.previousElementSibling.innerText = translationsRevers[arrText];
+
+// function blackoutFu() {
+//     card_button_switch.style.opacity = '1'
+// }
+// setTimeout(blackoutFu, 300);
+// arrText = '';
+
+
+
+
+
+
+
+
+// let ele = card_button_switch.parentElement
+// console.log(ele)
+// if (card_button_switch.style.opacity == '0') {
+//     ele.transitionend = function() {
+//         event.target.parentElement.parentNode.style.transition = 'transform 0.5s';
+//         event.target.parentElement.parentNode.style.transform = 'rotateY(0deg)';
+//         event.target.previousElementSibling.style.transformStyle = "preserve-3d";
+//         event.target.previousElementSibling.style.transform = 'rotateY(0deg)';
+//         arrText += event.target.previousElementSibling.innerText;
+//         event.target.previousElementSibling.innerText = translationsRevers[arrText];
+//         console.log(arrText);
+
+//         function blackoutFu() {
+//             card_button_switch.style.opacity = '1'
+//         }
+//         setTimeout(blackoutFu, 300);
+//         arrText = '';
+//     }
+// }
+
+
+
+
+
+
+
+
 
 
 
