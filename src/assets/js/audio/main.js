@@ -1,14 +1,10 @@
 // Speech synthesis
 const play = document.querySelectorAll('.card_button_play')
-
 const synth = window.speechSynthesis;
-
 const inputForm = document.querySelector('form');
 const inputTxt = document.querySelector('.text');
 const inputT = document.querySelectorAll('.card-text_card');
-
 const voicesList = document.querySelector('select');
-
 const pitch = document.querySelector('#pitch');
 const pitchValue = document.querySelector('.value--pitch-value');
 const rate = document.querySelector('#rate');

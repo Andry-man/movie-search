@@ -11,9 +11,10 @@
     <div class="wrapper">
         <div class="blackout" id="blackout"></div>
         <div class="main_wrapper">
-            <nav class="navbar">
+            <nav class="navbar" id="navbar">
+                <p class="title">English for kids<br>RSSchool2020Q1</p>
                 <div class="navMenu" id="navMenu">
-                    <ul class="list_menu">
+                    <ul class="list_menu" id="list_menu">
                         <li class="main_page" id="main_page">Main page</li>
                         <li class="menu_action_1" id="menu_action_1">Action(A)</li>
                         <li class="menu_action_2" id="menu_action_2">Action(B)</li>
@@ -40,7 +41,7 @@
                 <li>
                     <section class="card" id="cart_1">
                         <img class="card-img-top" src="./assets/img/action1.jpg" alt="img action1">
-                        <div class="card-body">
+                        <div class="card-body" id="action_1">
                             <p class="card-text">Action (set A)</p>
                         </div>
                     </section>
@@ -48,7 +49,7 @@
                 <li>
                     <section class="card" id="cart_2">
                         <img class="card-img-top" src="./assets/img/acton2.jpg" alt="img action2">
-                        <div class="card-body">
+                        <div class="card-body" id="action_2">
                             <p class="card-text">Action (set B)</p>
                         </div>
                     </section>
@@ -56,7 +57,7 @@
                 <li>
                     <section class="card" id="cart_3">
                         <img class="card-img-top" src="./assets/img/action3.JPG" alt="img action3">
-                        <div class="card-body">
+                        <div class="card-body" id="action_3">
                             <p class="card-text">Action (set C)</p>
                         </div>
                     </section>
@@ -64,7 +65,7 @@
                 <li>
                     <section class="card" id="cart_4">
                         <img class="card-img-top" src="./assets/img/ajective.jpg" alt="Adjective">
-                        <div class="card-body">
+                        <div class="card-body" id="adjective">
                             <p class="card-text">Adjective</p>
                         </div>
                     </section>
@@ -72,7 +73,7 @@
                 <li>
                     <section class="card" id="cart_5">
                         <img class="card-img-top" src="./assets/img/animal.jpg" alt="animal (set A)">
-                        <div class="card-body">
+                        <div class="card-body" id="animal_1">
                             <p class="card-text">Animal (set A)</p>
                         </div>
                     </section>
@@ -80,7 +81,7 @@
                 <li>
                     <section class="card" id="cart_6">
                         <img class="card-img-top" src="./assets/img/animal(2).jpg" alt="animal (set B)">
-                        <div class="card-body">
+                        <div class="card-body" id="animal_2">
                             <p class="card-text">Animal (set B)</p>
                         </div>
                     </section>
@@ -88,7 +89,7 @@
                 <li>
                     <section class="card" id="cart_7">
                         <img class="card-img-top" src="./assets/img/chlothers.jpg" alt="Clothes">
-                        <div class="card-body">
+                        <div class="card-body" id="clothes">
                             <p class="card-text">Clothes</p>
                         </div>
                     </section>
@@ -96,8 +97,98 @@
                 <li>
                     <section class="card" id="cart_8">
                         <img class="card-img-top" src="./assets/img/emotion.jpg" alt="emotion">
-                        <div class="card-body">
+                        <div class="card-body" id="emotion">
                             <p class="card-text">Emotion</p>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+
+            <ul class="cart_container_cards" id="cart_container_cards">
+                <li>
+                    <section class="card" id="cart_1">
+                        <img class="card-img-top" src="./assets/img/action1.jpg" id="img_action_1" alt="img action1">
+                        <div class="card-body">
+                            <p class="card-text_card" id="card_text_1">Action (set A)</p>
+                            <p class="card_button_switch"> ↻</p>
+                            <button class="card_button_play" id="play" type="submit">listen/Cлушать ♪</button>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_2">
+                        <img class="card-img-top" id="img_action_2" src="./assets/img/acton2.jpg" alt="img action2">
+                        <div class="card-body">
+                            <p class="card-text_card" id="card_text_2">Action (set B)</p>
+                            <p class="card_button_switch"> ↻</p>
+                            <button class="card_button_play"  type="submit">listen/Cлушать ♪</button>
+
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_3">
+                        <img class="card-img-top" id="img_action_3" src="./assets/img/action3.JPG" alt="img action3">
+                        <div class="card-body">
+                            <p class="card-text_card" id="card_text_3">Action (set C)</p>
+                            <p class="card_button_switch"> ↻</p>
+                            <button class="card_button_play"  type="submit">listen/Cлушать ♪</button>
+
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_4">
+                        <img class="card-img-top" id="img_Adjective" src="./assets/img/ajective.jpg" alt="Adjective">
+                        <div class="card-body">
+                            <p class="card-text_card" id="card_text_4">Adjective</p>
+                            <p class="card_button_switch"> ↻</p>
+                            <button class="card_button_play"  type="submit">listen/Cлушать ♪</button>
+
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_5">
+                        <img class="card-img-top" id="img_animal_1" src="./assets/img/animal.jpg" alt="animal (set A)">
+                        <div class="card-body">
+                            <p class="card-text_card" id="card_text_5">Animal (set A)</p>
+                            <p class="card_button_switch"> ↻</p>
+                            <button class="card_button_play"  type="submit">listen/Cлушать ♪</button>
+
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_6">
+                        <img class="card-img-top" id="img_animal_2" src="./assets/img/animal(2).jpg" alt="animal (set B)">
+                        <div class="card-body">
+                            <p class="card-text_card" id="card_text_6">Animal (set B)</p>
+                            <p class="card_button_switch"> ↻</p>
+                            <button class="card_button_play"  type="submit">listen/Cлушать ♪</button>
+
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_7">
+                        <img class="card-img-top" id="img_Clothes" src="./assets/img/chlothers.jpg" alt="Clothes">
+                        <div class="card-body">
+                            <p class="card-text_card" id="card_text_7">Clothes</p>
+                            <p class="card_button_switch"> ↻</p>
+                            <button class="card_button_play"  type="submit">listen/Cлушать ♪</button>
+
+                        </div>
+                    </section>
+                </li>
+                <li>
+                    <section class="card" id="cart_8">
+                        <img class="card-img-top" id="img_emotion" src="./assets/img/emotion.jpg" alt="emotion">
+                        <div class="card-body">
+                            <p class="card-text_card" id="card_text_8">Emotion</p>
+                            <p class="card_button_switch"> ↻</p>
+                            <button class="card_button_play"  type="submit">listen/Cлушать ♪</button>
+
                         </div>
                     </section>
                 </li>
@@ -105,9 +196,26 @@
             <div>
             </div>
             <div class="button_start"><span>Start Game!</span></div>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <div class="audio_block">
+              <section>
+        <form class='audio_form'>
+            <input type="text" class="text">
+                <div class="ranges-box">
+                    <input type="range" min="0.5" max="2" value="1" step="0.1" id="rate">
+                    <input type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+                </div>
+            </div>
+
+            </div>
+            <select class='voice_list'>
+      </select>
+        </form>
+    </section>
+
+        </div>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </body>
 
 </html>
