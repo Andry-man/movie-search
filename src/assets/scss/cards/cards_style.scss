@@ -19,8 +19,9 @@
         transition: transform 5s;
         cursor: pointer;
         position: relative;
+        height: 100%;
     }
-    .card-text {
+    .card-text_card {
         display: inline;
         color: #fff;
         font-size: 1.5em;
@@ -60,14 +61,31 @@
     cursor: pointer;
     font-size: 2em;
     width: 100%;
+    position: relative;
     height: 105px;
     text-align: center;
     color: #fff;
     z-index: 5;
-    margin: auto auto auto auto;
-    padding-top: 40px;
+    padding-top: 0px;
+    margin-top: 55px;
 }
 
 .card_button_switch:hover {
     color: red;
+}
+
+.card_button_play {
+    cursor: pointer;
+    background-color: #91b0ff96;
+    -webkit-appearance: button;
+    border-radius: 15px 15px 15px 15px;
+    border: none;
+}
+
+.card_button_play:hover {
+    cursor: pointer;
+    background-color: #070d1d96;
+    -webkit-appearance: button;
+    border-radius: 15px 15px 15px 15px;
+    border: none;
 }

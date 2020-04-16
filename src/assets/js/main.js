@@ -1,6 +1,9 @@
 import { cart_1, cart_2, cart_3, cart_4, cart_5, cart_6, cart_7, cart_8, card_button_switch, card } from "./name_constants"
 import { translations, translationsRevers } from "./translations"
+//import { translations, translationsRevers } from "./audio/main"
+
 let arrCard = [cart_1, cart_2, cart_3, cart_4, cart_5, cart_6, cart_7, cart_8];
+
 
 class Cards {
 
@@ -333,45 +336,6 @@ let testDivs = Array.prototype.filter.call(card_button_switch, function(card_but
 
 
 
-// event.target.parentElement.parentNode.style.transition = 'transform 0.5s';
-// event.target.parentElement.parentNode.style.transform = 'rotateY(0deg)';
-// event.target.previousElementSibling.style.transformStyle = "preserve-3d";
-// event.target.previousElementSibling.style.transform = 'rotateY(0deg)';
-// arrText += event.target.previousElementSibling.innerText;
-// event.target.previousElementSibling.innerText = translationsRevers[arrText];
-
-// function blackoutFu() {
-//     card_button_switch.style.opacity = '1'
-// }
-// setTimeout(blackoutFu, 300);
-// arrText = '';
-
-
-
-
-
-
-
-
-// let ele = card_button_switch.parentElement
-// console.log(ele)
-// if (card_button_switch.style.opacity == '0') {
-//     ele.transitionend = function() {
-//         event.target.parentElement.parentNode.style.transition = 'transform 0.5s';
-//         event.target.parentElement.parentNode.style.transform = 'rotateY(0deg)';
-//         event.target.previousElementSibling.style.transformStyle = "preserve-3d";
-//         event.target.previousElementSibling.style.transform = 'rotateY(0deg)';
-//         arrText += event.target.previousElementSibling.innerText;
-//         event.target.previousElementSibling.innerText = translationsRevers[arrText];
-//         console.log(arrText);
-
-//         function blackoutFu() {
-//             card_button_switch.style.opacity = '1'
-//         }
-//         setTimeout(blackoutFu, 300);
-//         arrText = '';
-//     }
-// }
 
 
 
@@ -383,6 +347,12 @@ let testDivs = Array.prototype.filter.call(card_button_switch, function(card_but
 
 
 
-let element = document.body; //запрет выделения текста
-element.onselectstart = function() { return false; }
-element.onmousedown = function() { return false; }
+
+
+
+
+
+
+// let element = document.body; //запрет выделения текста
+// element.onselectstart = function() { return false; }
+// element.onmousedown = function() { return false; }
