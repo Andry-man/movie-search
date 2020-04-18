@@ -1,7 +1,9 @@
-import { cart_1, cart_2, cart_3, cart_4, cart_5, cart_6, cart_7, cart_8, card_button_switch, card } from "./name_constants"
-import { translations, translationsRevers } from "./translations"
+import { cart_1, cart_2, cart_3, cart_4, cart_5, cart_6, cart_7, cart_8, card_button_switch, card, button_start, cart_01, cart_02, cart_03, cart_04, cart_05, cart_06, cart_07, cart_08 } from "./name_constants"
+import { translations, translationsRevers } from "./translations";
 let burger_menu_Counter = 0;
 let arrCard = [cart_1, cart_2, cart_3, cart_4, cart_5, cart_6, cart_7, cart_8];
+export let arrCardCardInfo = [cart_01, cart_02, cart_03, cart_04, cart_05, cart_06, cart_07, cart_08];
+
 
 
 class Cards {
@@ -111,7 +113,7 @@ burgerM.forEach(function(elem) { //burgerMenuNav
 
         if (elem.id == 'menu_action_2') {
             cart_container.style.display = 'none'
-            cart_container_cards.style.display = 'flex'  
+            cart_container_cards.style.display = 'flex'
             card_Action_1.text_change(card_text_1.innerText = 'open')
             card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/open.jpg')
             cart_emotion.text_change(card_text_8.innerText = 'skip')
@@ -132,7 +134,7 @@ burgerM.forEach(function(elem) { //burgerMenuNav
 
         if (elem.id == 'menu_action_3') {
             cart_container.style.display = 'none'
-            cart_container_cards.style.display = 'flex' 
+            cart_container_cards.style.display = 'flex'
             card_Action_1.text_change(card_text_1.innerText = 'argue')
             card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/argue.jpg')
             card_Action_2.text_change(card_text_2.innerText = 'build')
@@ -152,27 +154,27 @@ burgerM.forEach(function(elem) { //burgerMenuNav
         }
         if (elem.id == 'menu_adjective') {
             cart_container.style.display = 'none'
-            cart_container_cards.style.display = 'flex' 
-            card_Action_1.text_change(card_text_1.innerText = 'argue')
-            card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/argue.jpg')
-            card_Action_2.text_change(card_text_2.innerText = 'build')
-            card_Action_2.img_change(img_action_2.src = './assets/img/img_action_1/build.jpg')
-            card_Action_3.text_change(card_text_3.innerText = 'carry')
-            card_Action_3.img_change(img_action_3.src = './assets/img/img_action_1/carry.jpg')
-            card_Adjective.text_change(card_text_4.innerText = 'catch')
-            card_Adjective.img_change(img_Adjective.src = './assets/img/img_action_1/catch.jpg')
-            card_Animal_1.text_change(card_text_5.innerText = 'drive')
-            card_Animal_1.img_change(img_animal_1.src = './assets/img/img_action_1/drive.jpg')
-            card_Animal_2.text_change(card_text_6.innerText = 'drop')
-            card_Animal_2.img_change(img_animal_2.src = './assets/img/img_action_1/drop.jpg')
-            cart_Clothes.text_change(card_text_7.innerText = 'pull')
-            cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/pull.jpg')
-            cart_emotion.text_change(card_text_8.innerText = 'push')
-            cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/push.jpg')
+            cart_container_cards.style.display = 'flex'
+            card_Action_1.text_change(card_text_1.innerText = 'big')
+            card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/big.jpg')
+            card_Action_2.text_change(card_text_2.innerText = 'small')
+            card_Action_2.img_change(img_action_2.src = './assets/img/img_action_1/small.jpg')
+            card_Action_3.text_change(card_text_3.innerText = 'fast')
+            card_Action_3.img_change(img_action_3.src = './assets/img/img_action_1/fast.jpg')
+            card_Adjective.text_change(card_text_4.innerText = 'slow')
+            card_Adjective.img_change(img_Adjective.src = './assets/img/img_action_1/slow.jpg')
+            card_Animal_1.text_change(card_text_5.innerText = 'friendly')
+            card_Animal_1.img_change(img_animal_1.src = './assets/img/img_action_1/friendly.jpg')
+            card_Animal_2.text_change(card_text_6.innerText = 'unfriendly')
+            card_Animal_2.img_change(img_animal_2.src = './assets/img/img_action_1/unfriendly.jpg')
+            cart_Clothes.text_change(card_text_7.innerText = 'young')
+            cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/young.jpg')
+            cart_emotion.text_change(card_text_8.innerText = 'old')
+            cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/old.jpg')
         }
         if (elem.id == 'menu_animal_1') {
             cart_container.style.display = 'none'
-            cart_container_cards.style.display = 'flex'  
+            cart_container_cards.style.display = 'flex'
             card_Action_1.text_change(card_text_1.innerText = 'cat')
             card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/cat.jpg')
             card_Action_2.text_change(card_text_2.innerText = 'chick')
@@ -192,7 +194,7 @@ burgerM.forEach(function(elem) { //burgerMenuNav
         }
         if (elem.id == 'menu_animal_2') {
             cart_container.style.display = 'none'
-            cart_container_cards.style.display = 'flex'  
+            cart_container_cards.style.display = 'flex'
             card_Action_1.text_change(card_text_1.innerText = 'bird')
             card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/bird.jpg')
             card_Action_2.text_change(card_text_2.innerText = 'fish')
@@ -213,7 +215,7 @@ burgerM.forEach(function(elem) { //burgerMenuNav
 
         if (elem.id == 'menu_clothes') {
             cart_container.style.display = 'none'
-            cart_container_cards.style.display = 'flex' 
+            cart_container_cards.style.display = 'flex'
             card_Action_1.text_change(card_text_1.innerText = 'skirt')
             card_Action_1.img_change(img_action_1.src = './assets/img/img_action_1/skirt.jpg')
             card_Action_2.text_change(card_text_2.innerText = 'pants')
@@ -230,7 +232,7 @@ burgerM.forEach(function(elem) { //burgerMenuNav
             cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/coat.jpg')
             cart_emotion.text_change(card_text_8.innerText = 'shoe')
             cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/shoe.jpg')
-            
+
         }
 
         if (elem.id == 'menu_emotion') {
@@ -251,22 +253,22 @@ burgerM.forEach(function(elem) { //burgerMenuNav
             cart_Clothes.text_change(card_text_7.innerText = 'smile')
             cart_Clothes.img_change(img_Clothes.src = './assets/img/img_action_1/smile.jpg')
             cart_emotion.text_change(card_text_8.innerText = 'laugh')
-            cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/laugh.jpg')      
+            cart_emotion.img_change(img_emotion.src = './assets/img/img_action_1/laugh.jpg')
         }
-        if(elem.id == 'menu_emotion'|| elem.id == 'menu_clothes'|| elem.id == 'menu_animal_2' ||elem.id == 'menu_adjective'||elem.id == 'menu_animal_1' || elem.id == 'menu_action_3' ||elem.id == 'menu_action_2'||elem.id == 'menu_action_1') {
-         burger_menu_Counter++
-    burger_el_1.style.transform = 'translate(0px, 0px)rotate(0deg)';
-    burger_el_1.style.color = 'black';
-    burger_el_2.style.display = 'inline-block';
-    burger_el_3.style.transform = 'translate(0px, 0px) rotate(0deg)';
-    burger_el_3.style.color = 'black';
-    navMenu.style.transform = 'translate(-143%,36vh)';
-    blackout.style.backgroundColor = 'rgba(0,0,0,0)';
+        if (elem.id == 'menu_emotion' || elem.id == 'menu_clothes' || elem.id == 'menu_animal_2' || elem.id == 'menu_adjective' || elem.id == 'menu_animal_1' || elem.id == 'menu_action_3' || elem.id == 'menu_action_2' || elem.id == 'menu_action_1') {
+            burger_menu_Counter++
+            burger_el_1.style.transform = 'translate(0px, 0px)rotate(0deg)';
+            burger_el_1.style.color = 'black';
+            burger_el_2.style.display = 'inline-block';
+            burger_el_3.style.transform = 'translate(0px, 0px) rotate(0deg)';
+            burger_el_3.style.color = 'black';
+            navMenu.style.transform = 'translate(-143%,36vh)';
+            blackout.style.backgroundColor = 'rgba(0,0,0,0)';
 
-    function blackoutFun() {
-        blackout.style.display = 'none';
-    }
-    setTimeout(blackoutFun, 300);
+            function blackoutFun() {
+                blackout.style.display = 'none';
+            }
+            setTimeout(blackoutFun, 300);
         }
     });
 });
@@ -481,14 +483,33 @@ checkbox.addEventListener('click', (event) => { //Checkbox function
     checkbox_but++
     if (checkbox_but % 2 == true) {
         arrCard.forEach(el => el.style.background = 'linear-gradient(90deg, rgba(110, 0, 255, 0.7) 0px, rgba(210, 0, 224, 0.99) 54%, rgb(204, 0, 255) 0px)');
+        navMenu.style.background = 'rgba(110, 0, 255, 0.7)';
+        if (cart_container.style.display == 'none') {
+            button_start.style.display = 'block';
+        }
+        for (let i = 0; i < arrCard.length; i++) {
+            arrCardCardInfo[i].childNodes[3].style.display = 'none';
+        }
     }
     if (checkbox_but % 2 != true) {
         arrCard.forEach(el => el.style.background = 'linear-gradient(90deg,rgba(255,94,94,.7) 0,rgba(239,1,124,.99) 54%,#ef017c 0)');
+        navMenu.style.background = '#75bdd1';
+        if (button_start.style.display == 'block') {
+            button_start.style.display = 'none';
+        }
+        for (let i = 0; i < arrCard.length; i++) {
+            arrCardCardInfo[i].childNodes[3].style.display = 'block';
+        }
+        button_start.style.borderRadius = '24px 24px 24px 24px';
+        button_start.style.width = '36%';
+        button_start.children[0].style.marginTop = '-4%';
+        button_start.children[0].innerText = 'Start Game!';
     }
-})
+});
+
 let arrText = '';
-let testDivs = Array.prototype.filter.call(card_button_switch, function(card_button_switch) {//Revers Card
-    card_button_switch.addEventListener('mouseover', (event) => { 
+let testDivs = Array.prototype.filter.call(card_button_switch, function(card_button_switch) { //Revers Card
+    card_button_switch.addEventListener('mouseover', (event) => {
         event.target.parentElement.parentNode.style.transition = 'transform 0.5s';
         event.target.parentElement.parentNode.style.transform = 'rotateY(180deg)';
         arrText += event.target.previousElementSibling.innerText;
@@ -499,7 +520,7 @@ let testDivs = Array.prototype.filter.call(card_button_switch, function(card_but
 
 
     })
-    card_button_switch.addEventListener('mouseout', (event) => { 
+    card_button_switch.addEventListener('mouseout', (event) => {
         event.target.parentElement.parentNode.style.transition = 'transform 0.5s';
         event.target.parentElement.parentNode.style.transform = 'rotateY(0deg)';
         event.target.previousElementSibling.style.transformStyle = "preserve-3d";
@@ -511,7 +532,31 @@ let testDivs = Array.prototype.filter.call(card_button_switch, function(card_but
 
 })
 
+const nums = [0, 1, 2, 3, 4, 5, 6, 7];
+export const ranNums = [];
+const randomArr = []
+let i = nums.length;
+let j = 0;
+while (i--) {
+    j = Math.floor(Math.random() * (i + 1));
+    ranNums.push(nums[j]);
+    nums.splice(j, 1);
+}
 
+function VoiceGame(par) {
+    let test = ranNums.shift()
+    randomArr.push(test)
+}
+let ind = 0
+
+button_start.addEventListener('click', (event) => { //Start game!
+    VoiceGame(ranNums)
+    button_start.style.borderRadius = '200px 200px 200px 200px';
+    button_start.style.width = '6%';
+    button_start.children[0].style.marginTop = '-27%';
+    button_start.children[0].innerText = '↻';
+    ind++
+});
 
 
 

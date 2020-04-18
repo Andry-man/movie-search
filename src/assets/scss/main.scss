@@ -91,6 +91,8 @@ body {
     border-radius: 24px 24px 24px 24px;
     box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.75);
     cursor: pointer;
+    display: none;
+    transition: width 0.5s;
 }
 
 span {
@@ -262,8 +264,33 @@ span {
 }
 
 .voice_list {
-    display:none;
+    display: none;
 }
+
 .audio_form {
-display:none;
+    display: none;
+}
+
+.fin_banner {
+    position: absolute;
+    background-color: #00f;
+    display: none;
+    width: 0%;
+    height: 79%;
+    text-align: center;
+    margin-left: 17%;
+    margin-top: 5%;
+    z-index: 6;
+    font-size: 7em;
+    transition: width .5s;
+}
+
+.win_star {
+    position: absolute;
+    width: 28%;
+    height: 28%;
+    margin-left: calc(100% - 31%);
+    text-align: right;
+    top: 13%;
+    font-size: 2em;
 }
