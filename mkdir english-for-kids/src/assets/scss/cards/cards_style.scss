@@ -65,7 +65,7 @@
     height: 105px;
     text-align: center;
     color: #fff;
-    z-index: 5;
+    z-index: 9;
     padding-top: 0px;
     margin-top: 55px;
 }
@@ -76,16 +76,18 @@
 
 .card_button_play {
     cursor: pointer;
-    background-color: #91b0ff96;
-    -webkit-appearance: button;
-    border-radius: 15px 15px 15px 15px;
+    background-color: rgba(145, 176, 255, 0);
     border: none;
+    width: 101%;
+    height: 101%;
+    margin-left: -21px;
+    position: absolute;
+    margin-top: -384px;
 }
 
-.card_button_play:hover {
-    cursor: pointer;
-    background-color: #070d1d96;
-    -webkit-appearance: button;
-    border-radius: 15px 15px 15px 15px;
-    border: none;
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    height: 187px;
 }

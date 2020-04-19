@@ -75,7 +75,7 @@ main_page.addEventListener('click', (event) => { //buttonBurgerMenu (action main
     burger_el_2.style.display = 'inline-block';
     burger_el_3.style.transform = 'translate(0px, 0px) rotate(0deg)';
     burger_el_3.style.color = 'black';
-    navMenu.style.transform = 'translate(-143%,36vh)';
+    navMenu.style.transform = 'translate(-173%,36vh)';
     blackout.style.backgroundColor = 'rgba(0,0,0,0)';
 
     function blackoutFun() {
@@ -262,7 +262,7 @@ burgerM.forEach(function(elem) { //burgerMenuNav
             burger_el_2.style.display = 'inline-block';
             burger_el_3.style.transform = 'translate(0px, 0px) rotate(0deg)';
             burger_el_3.style.color = 'black';
-            navMenu.style.transform = 'translate(-143%,36vh)';
+            navMenu.style.transform = 'translate(-163%,36vh)';
             blackout.style.backgroundColor = 'rgba(0,0,0,0)';
 
             function blackoutFun() {
@@ -443,7 +443,7 @@ burger_menu.addEventListener('click', (event) => { //BurgerMenu
         burger_el_2.style.display = 'none';
         burger_el_3.style.transform = 'translate(-18px, 3px) rotate(-45deg)';
         burger_el_3.style.color = 'red';
-        navMenu.style.transform = 'translate(-73%,36vh)';
+        navMenu.style.transform = 'translate(-61%,36vh)';
         blackout.style.backgroundColor = 'rgba(0,0,0,.68)';
     }
     if (burger_menu_Counter % 2 != true) {
@@ -452,7 +452,7 @@ burger_menu.addEventListener('click', (event) => { //BurgerMenu
         burger_el_2.style.display = 'inline-block';
         burger_el_3.style.transform = 'translate(0px, 0px) rotate(0deg)';
         burger_el_3.style.color = 'black';
-        navMenu.style.transform = 'translate(-143%,36vh)';
+        navMenu.style.transform = 'translate(-163%,36vh)';
         blackout.style.backgroundColor = 'rgba(0,0,0,0)';
 
         function blackoutFun() {
@@ -469,7 +469,7 @@ blackout.addEventListener('click', (event) => { //BurgerMenu_background
     burger_el_2.style.display = 'inline-block';
     burger_el_3.style.transform = 'translate(0px, 0px) rotate(0deg)';
     burger_el_3.style.color = 'black';
-    navMenu.style.transform = 'translate(-143%,36vh)';
+    navMenu.style.transform = 'translate(-163%,36vh)';
     blackout.style.backgroundColor = 'rgba(0,0,0,0)';
 
     function blackoutFun() {
@@ -519,7 +519,9 @@ let testDivs = Array.prototype.filter.call(card_button_switch, function(card_but
         arrText = '';
 
 
+
     })
+
     card_button_switch.addEventListener('mouseout', (event) => {
         event.target.parentElement.parentNode.style.transition = 'transform 0.5s';
         event.target.parentElement.parentNode.style.transform = 'rotateY(0deg)';
@@ -529,7 +531,6 @@ let testDivs = Array.prototype.filter.call(card_button_switch, function(card_but
         event.target.previousElementSibling.innerText = translationsRevers[arrText];
         arrText = '';
     })
-
 })
 
 const nums = [0, 1, 2, 3, 4, 5, 6, 7];
