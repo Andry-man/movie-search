@@ -1,0 +1,258 @@
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0px;
+    background-color: #afafaf;
+}
+
+.wrapper {
+    width: 84%;
+    height: 98vh;
+    margin: auto;
+}
+
+.block_startGame {
+    width: 100vw;
+    height: 100vh;
+    background-color: #3d3d3d;
+    display: block;
+    opacity: 1;
+    transform: translate(0%, 0vh);
+    transition: transform 0.9s, opacity 1s;
+}
+
+.main_text_1 {
+    position: absolute;
+    padding-left: 44%;
+    padding-top: 16%;
+    font-family: 'Special Elite', cursive;
+    color: #c7c7c7;
+    font-size: 2em;
+}
+
+.main_text_2 {
+    position: absolute;
+    padding-left: calc(100vw - 76%);
+    padding-top: 22%;
+    font-family: Teko, sans-serif;
+    font-size: 1.7em;
+    color: white;
+}
+
+.button_start {
+    display: block;
+    position: absolute;
+    width: 9%;
+    margin-left: 44%;
+    margin-top: 36%;
+    height: 6%;
+}
+
+.button_start:hover {
+    background-color: #4c4c4c3d;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.container_menu {
+    width: 33%;
+    height: 100px;
+}
+
+.container_img {
+    width: 39%;
+    height: 37%;
+    margin: auto;
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.container_Main_text {
+    width: 100%;
+    height: 6%;
+    text-align: center;
+    font-family: Teko, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.container_words {
+    width: 100%;
+    height: 24%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.container_buttons {
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+.word_box {
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    width: 17%;
+    margin: auto;
+    height: 43%;
+    box-shadow: 0px 2px 25px -13px rgba(0, 0, 0, 0.75);
+    border-radius: 11px 11px 11px 11px;
+    z-index: 10;
+    position: relative;
+}
+
+.word_box:hover {
+    display: flex;
+    flex-direction: row;
+    background-color: #c6ffff;
+    width: 17%;
+    position: relative;
+    margin: auto;
+    height: 43%;
+    z-index: 10;
+    box-shadow: 0px 2px 25px -13px rgba(0, 0, 0, 0.75);
+    border-radius: 11px 11px 11px 11px;
+}
+
+ul.nav_list {
+    padding: 4px;
+    list-style-type: disc;
+    width: 276px;
+    margin: auto
+}
+
+ul.nav_list li {
+    display: inline-block;
+    margin-right: 5px;
+    width: 30px;
+    height: 27px;
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 200px 200px 200px 200px;
+    margin-top: 9%;
+    cursor: pointer;
+}
+
+ul.nav_list li:hover {
+    display: inline-block;
+    margin-right: 5px;
+    width: 30px;
+    height: 27px;
+    padding: 3px;
+    background-color: #b1b1b1;
+    border-radius: 200px 200px 200px 200px;
+    margin-top: 9%;
+    cursor: pointer;
+}
+
+.container_audio {
+    width: 32%;
+    z-index: 1;
+    position: relative;
+}
+
+.container_text {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    z-index: 1;
+    position: relative;
+}
+
+.text_1 {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    font-size: 1.4em;
+    text-transform: capitalize;
+}
+
+.text_2 {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    font-size: 1.4em;
+    text-transform: capitalize;
+}
+
+.butt_restart {
+    width: 21%;
+    height: 56%;
+    border-radius: 11px 11px 11px 11px;
+    border: none;
+    background-color: #1290ff;
+    box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.butt_speak {
+    width: 21%;
+    height: 56%;
+    border-radius: 11px 11px 11px 11px;
+    border: none;
+    background-color: #1290ff;
+    box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.butt_results {
+    width: 21%;
+    height: 56%;
+    border-radius: 11px 11px 11px 11px;
+    border: none;
+    background-color: #1290ff;
+    box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.but {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    height: 100%;
+    opacity: 0;
+}
+
+.img_audio {
+    display: none;
+    position: absolute;
+    height: auto;
+    width: 5%;
+    margin-left: 28%;
+    margin-top: 29%;
+}
+
+.img_audio_block {
+    position: absolute;
+    height: auto;
+    width: 81%;
+    margin-left: 28%;
+    margin-top: 29%;
+}
+
+.audio_block {
+    display: none;
+}
+
+.active {
+    background-color: red !important;
+}
