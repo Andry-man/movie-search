@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>MovieSearch</title>
+    <link href="/assets/css/app.e1ebe4b49e660a3f7db5.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id="header_button">
+            <span class="header_text">MovieSearch</span>
+        </header>
+        <div class="error_block" id="error_block"></div>
+        <div class="main_wrapper">
+            <main class="main_block">
+                <div class="search">
+                    <input class="input_search" id="area" type="text" pattern="^[А-Яа-яЁёa-zA-Z0-9{,3}\s]+$" placeholder="Search movie">
+                    <img class="spinner_img" id="spinner_img" src="./assets/img/spinner.gif" alt="spinner_img">
+                    <span class="clear_input" id="clear_input">X</span>
+                    <div class="button_key"><img class="img_key" id="key_button" src="./assets/img/key.png" alt="icon"></div>
+                    <div class="button_search"><button id="button_search">Search</button></div>
+                </div>
+                <div class="virtual_keyboard" id="virtual_keyboard"></div>
+                <div class="gallery">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="block_one">
+                                    <div class="card_1"> <span class="name_film">NameFilm</span>
+                                        <img class="img_film" src="#" alt="poster">
+                                        <span class="date_film">2020</span>
+                                        <div class="block_rating">
+                                            <span class="star_r">✭</span>
+                                            <span class="rating_star">6</span>
+                                        </div>
+                                    </div>
+                                    <div class="card_2"> <span class="name_film">NameFilm</span>
+                                        <img class="img_film" src="" alt="poster">
+                                        <span class="date_film">2020</span>
+                                        <div class="block_rating">
+                                            <span class="star_r">✭</span>
+                                            <span class="rating_star">6</span>
+                                        </div>
+                                    </div>
+                                    <div class="card_3"> <span class="name_film">NameFilm</span>
+                                        <img class="img_film" src="#" alt="poster">
+                                        <span class="date_film">2020</span>
+                                        <div class="block_rating">
+                                            <span class="star_r">✭</span>
+                                            <span class="rating_star">6</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="block_two">
+                                    <div class="card_1"> <span class="name_film">NameFilm</span>
+                                        <img class="img_film" src="#" alt="poster">
+                                        <span class="date_film">2020</span>
+                                        <div class="block_rating">
+                                            <span class="star_r">✭</span>
+                                            <span class="rating_star">6</span>
+                                        </div>
+                                    </div>
+                                    <div class="card_2"> <span class="name_film">NameFilm</span>
+                                        <img class="img_film" src="#" alt="poster">
+                                        <span class="date_film">2020</span>
+                                        <div class="block_rating">
+                                            <span class="star_r">✭</span>
+                                            <span class="rating_star">6</span>
+                                        </div>
+                                    </div>
+                                    <div class="card_3"> <span class="name_film">NameFilm</span>
+                                        <img class="img_film" src="#" alt="poster">
+                                        <span class="date_film">2020</span>
+                                        <div class="block_rating">
+                                            <span class="star_r">✭</span>
+                                            <span class="rating_star">6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="carousel-item_3">
+                                <div class="block_tree">
+                                    <div class="card_1"> <span class="name_film">NameFilm</span>
+                                        <img class="img_film" src="#" alt="poster">
+                                        <span class="date_film">2020</span>
+                                        <div class="block_rating">
+                                            <span class="star_r">✭</span>
+                                            <span class="rating_star">6</span>
+                                        </div>
+                                    </div>
+                                    <div class="card_2"> <span class="name_film">NameFilm</span>
+                                        <img class="img_film" src="#" alt="poster">
+                                        <span class="date_film">2020</span>
+                                        <div class="block_rating">
+                                            <span class="star_r">✭</span>
+                                            <span class="rating_star">6</span>
+                                        </div>
+                                    </div>
+                                    <div class="card_3"> <span class="name_film">NameFilm</span>
+                                        <img class="img_film" src="#" alt="poster">
+                                        <span class="date_film">2020</span>
+                                        <div class="block_rating">
+                                            <span class="star_r">✭</span>
+                                            <span class="rating_star">6</span>
+                                        </div>
+                                    </div>
+                                    <div class="card_4">
+                                        <span class="name_film">NameFilm</span>
+                                        <img class="img_film" src="#" alt="poster">
+                                        <span class="date_film">2020</span>
+                                        <div class="block_rating">
+                                            <span class="star_r">✭</span>
+                                            <span class="rating_star">6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" id="control_next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <footer class="footer">
+            <span class="footer_block_1">RS School 2020q1</span>
+            <div class="footer_container_gh">
+                <img class="gh_logo" src="./assets/img/gh_logo.png" alt="githubLogo">
+                <span class="footer_block_2"> <a href="https://github.com/Andry-man">@Andry-man</a></span>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/js/vendors.d8dd9e8d7fab3e23c106.js"></script>
+    <script type="text/javascript" src="/assets/js/app.3346017a37fe56f94053.js"></script>
+</body>
+
+</html>
