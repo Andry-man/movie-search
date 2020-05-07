@@ -1,11 +1,12 @@
 import { key_button, clear_input } from "../name_constants";
 let key = 0;
-
+//function virtual keyboard
 function keyboard() {
     let input_area = document.createElement('div') //область клавиатуры
     input_area.id = 'input_area';
     input_area.className = "input_area"
     input_area.style.width = '107%';
+    input_area.style.height = 'inherit';
     input_area.style.display = 'flex';
     input_area.style.flexDirection = 'row';
     input_area.style.flexWrap = 'wrap';

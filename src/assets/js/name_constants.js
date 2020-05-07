@@ -1,3 +1,13 @@
 export const key_button = document.getElementById("key_button");
 export const clear_input = document.getElementById("clear_input");
 export const area = document.getElementById("area");
+export const name_film = document.getElementsByClassName('name_film');
+export const img_film = document.getElementsByClassName('img_film');
+export const date_film = document.getElementsByClassName('date_film');
+export const rating_star = document.getElementsByClassName('rating_star');
+export const button_search = document.getElementById("button_search");
+export const spinner_img = document.getElementById("spinner_img");
+export const error_block = document.getElementById("error_block");
+export const header_button = document.getElementById("header_button");
+export const carousel_item_3 = document.getElementById("carousel-item_3");
+export const control_next = document.getElementById("control_next");
